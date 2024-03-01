@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #6a0dad;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#video-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+#video-player {
+  max-width: 800px;
+  width: 100%;
+}
