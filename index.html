@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reproductor de Video</title>
-  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div id="video-container">
-    <div id="video-player">
-      <video id="my-video" class="video-js" controls preload="auto" width="485" height="264">
-        <source src="https://linear-351.frequency.stream/mt/studio/351/hls/master/playlist.m3u8" type="video/mp4">
-      </video>
-    </div>
-  </div>
-  
-  <script src="https://unpkg.com/video.js/dist/video.js"></script>
-  <script src="scripts.js"></script>
-</body>
-</html>
+<!-- Incluimos la librería JWPlayer -->
+<script src="https://jwpsrv.com/library/dvlGEDvMEeSLyCIACtqXBA.js"></script>
+
+<!-- Div donde se reproducirá el video -->
+<div id='playerAJxJyoaBJaaN'></div>
+
+<script type='text/javascript'>
+    jwplayer('playerAJxJyoaBJaaN').setup({
+        file: 'https://linear-351.frequency.stream/mt/studio/351/hls/master/playlist.m3u8',
+        title: 'CANAL 5 GRATIS',
+        width: '100%',
+        aspectratio: '16:9',
+        mute: 'true',
+        autostart: 'true',
+        hlshtml: true, // Utiliza el reproductor HLS nativo del navegador para mejorar la compatibilidad
+        preload: 'auto', // Permite que el reproductor controle el buffering automáticamente
+        androidhls: true, // Habilita la reproducción HLS en dispositivos Android
+        hlsjs: true // Utiliza HLS.js para mejorar la compatibilidad en navegadores que no admiten HLS nativamente
+    });
+</script>
