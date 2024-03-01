@@ -1,20 +1,29 @@
-<!-- Incluimos la librería JWPlayer -->
-<script src="https://jwpsrv.com/library/dvlGEDvMEeSLyCIACtqXBA.js"></script>
-
-<!-- Div donde se reproducirá el video -->
-<div id='playerAJxJyoaBJaaN'></div>
-
-<script type='text/javascript'>
-    jwplayer('playerAJxJyoaBJaaN').setup({
-        file: 'https://linear-351.frequency.stream/mt/studio/351/hls/master/playlist.m3u8',
-        title: 'CANAL 5 GRATIS',
-        width: '100%',
-        aspectratio: '16:9',
-        mute: 'true',
-        autostart: 'true',
-        hlshtml: true, // Utiliza el reproductor HLS nativo del navegador para mejorar la compatibilidad
-        preload: 'auto', // Permite que el reproductor controle el buffering automáticamente
-        androidhls: true, // Habilita la reproducción HLS en dispositivos Android
-        hlsjs: true // Utiliza HLS.js para mejorar la compatibilidad en navegadores que no admiten HLS nativamente
-    });
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de vídeo con fondo difuminado</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS externo -->
+    <script src="https://jwpsrv.com/library/dvlGEDvMEeSLyCIACtqXBA.js"></script>
+</head>
+<body>
+    <div class="video-container">
+        <div id="playerAJxJyoaBJaaN"></div>
+    </div>
+    <script type='text/javascript'>
+        jwplayer('playerAJxJyoaBJaaN').setup({
+            file: 'https://linear-351.frequency.stream/mt/studio/351/hls/master/playlist.m3u8',
+            title: 'CANAL 5 GRATIS',
+            width: '100%',
+            aspectratio: '16:9',
+            mute: 'true',
+            autostart: 'true',
+            hlshtml: true,
+            preload: 'auto',
+            androidhls: true,
+            hlsjs: true
+        });
+    </script>
+</body>
+</html>
